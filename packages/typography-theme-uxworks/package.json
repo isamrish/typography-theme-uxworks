@@ -1,0 +1,13 @@
+{
+  "name": "typography-theme-uxworks",
+  "version": "0.1.0",
+  "description": "typography for uxworks",
+  "main": "index.js",
+  "repository": "https://github.com/IsAmrish/typography-theme-uxworks.git",
+  "author": "isamrish <askmaurya48@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
