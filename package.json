@@ -1,0 +1,23 @@
+{
+  "name": "typography-theme-uxworks",
+  "version": "0.1.0",
+  "description": "typography for uxworks",
+  "main": "index.js",
+  "repository": "https://github.com/IsAmrish/typography-theme-uxworks.git",
+  "author": "isamrish <askmaurya48@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "typography-options-type": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-flow": "^7.0.0",
+    "flow-bin": "^0.111.3"
+  },
+  "scripts": {
+    "build": "babel src/ -d dist/",
+    "prepublish": "yarn run build"
+  }
+}
