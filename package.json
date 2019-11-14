@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "fs-extra": "^8.1.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^3.0.0",
     "typography-options-type": "^1.0.2"
@@ -15,14 +16,17 @@
   "devDependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
     "@babel/preset-flow": "^7.0.0",
+    "chalk": "^3.0.0",
     "flow-bin": "^0.111.3",
     "lerna": "^3.18.4"
   },
   "scripts": {
-    "build": "babel src/ -d dist/",
+    "build": "babel src/ --out-dir dist",
     "prepublish": "yarn run build",
-    "clean" : "rimraf dist/",
+    "clean": "babel-node scripts/clean.js",
     "lerna:build": "cp dist/* packages/typography-theme-uxworks/",
     "publish": "lerna publish"
   }
