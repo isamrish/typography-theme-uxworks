@@ -1,6 +1,6 @@
 {
   "name": "typography-theme-uxworks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "typography for uxworks",
   "main": "index.js",
   "repository": "https://github.com/IsAmrish/typography-theme-uxworks.git",
@@ -25,8 +25,9 @@
   },
   "scripts": {
     "build": "babel src/ --out-dir dist",
-    "prepublish": "yarn run build",
+    "prepublish": "yarn run clean && yarn run prepare && yarn run build && yarn run lerna:build",
     "clean": "babel-node scripts/clean.js",
+    "prepare" : "babel-node scripts/prepare.js",
     "lerna:build": "cp dist/* packages/typography-theme-uxworks/",
     "publish": "lerna publish"
   }
