@@ -29,6 +29,6 @@
     "clean": "babel-node scripts/clean.js",
     "prepare" : "babel-node scripts/prepare.js",
     "lerna:build": "cp dist/* packages/typography-theme-uxworks/",
-    "publish": "lerna publish"
+    "publish": "lerna publish from-package"
   }
 }
