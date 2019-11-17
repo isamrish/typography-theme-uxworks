@@ -1,4 +1,11 @@
-# **typography-theme-uxworks**
+<div align="center">
+  <h1>
+    <b>typography-theme-uxworks</b>
+  </h1
+  <p>
+   <span>For You</span>
+  </p>
+</div>
 
 ## **🤔 Why?**
 
