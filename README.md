@@ -3,9 +3,13 @@
     <b>typography-theme-uxworks</b>
   </h1
   <p>
-   <span>For You</span>
+
+   ![npm](https://img.shields.io/npm/v/typography-theme-uxworks?color=green)
+
   </p>
 </div>
+
+
 
 ## **🤔 Why?**
 
